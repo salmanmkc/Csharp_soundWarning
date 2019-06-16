@@ -62,7 +62,7 @@ namespace noise_Alert
         private string alertDetection(int soundLevel)
         {
           
-            if (soundLevel > 15) return "yes";
+            if (soundLevel > 65) return "yes";
             return "no";
             
         }
