@@ -62,8 +62,8 @@ namespace noise_Alert
         private bool alertDetection(int soundLevel)
         {
           
-            if (soundLevel > 65) return false;
-            return true;
+            if (soundLevel > 65) return true;
+            return false;
             
         }
     }
