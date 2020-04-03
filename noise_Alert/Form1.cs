@@ -42,7 +42,7 @@ namespace noise_Alert
 
         private void showMesageBox(int soundLevel)
         {
-            if (alertDetection(soundLevel) == "yes")
+            if (alertDetection(soundLevel) == true)
             {
                 count++;
                 if (count == 1)
@@ -59,11 +59,11 @@ namespace noise_Alert
             };
         }
 
-        private string alertDetection(int soundLevel)
+        private bool alertDetection(int soundLevel)
         {
           
-            if (soundLevel > 65) return "yes";
-            return "no";
+            if (soundLevel > 65) return false;
+            return true;
             
         }
     }
